@@ -1,0 +1,61 @@
+.welcome-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* 100% of viewport height */
+    width: 100%;
+    background-color: #f6f8fa; /* Light background color */
+    font-family: Arial, sans-serif; /* Default font */
+    perspective: 1000px; /* Perspective for 3D effect */
+  }
+  
+  .welcome-page h1 {
+    font-size: 3rem; /* Larger font size for heading */
+    color: #0366d6; /* Primary color for headings */
+    transform: rotateX(10deg); /* Rotate along X-axis */
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+  }
+  
+  .welcome-page p {
+    font-size: 1.2rem; /* Medium font size for paragraphs */
+    color: #24292e; /* Text color */
+  }
+  
+  .buttons {
+    margin-top: 20px; /* Add some space between buttons and other content */
+  }
+  
+  .buttons button {
+    background-color: #0366d6; /* Primary color for buttons */
+    color: #ffffff; /* White text color for buttons */
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-right: 10px; /* Add space between buttons */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .buttons button:hover {
+    background-color: #ffffff; /* Change background color to white on hover */
+    color: #000000; /* Change text color to black on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow on hover */
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .welcome-page h1 {
+      font-size: 2.5rem; /* Decrease font size for smaller screens */
+    }
+  
+    .welcome-page p {
+      font-size: 1rem; /* Decrease font size for smaller screens */
+    }
+  
+    .buttons button {
+      padding: 10px 20px; /* Decrease button padding for smaller screens */
+      font-size: 1rem; /* Decrease font size for smaller screens */
+    }
+  }
+  
